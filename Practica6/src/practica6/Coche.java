@@ -1,40 +1,47 @@
 package practica6;
 
 public class Coche {
+	//Constantes
+	static final String cocheConMatricula = "El coche con matricula";
+	static final String noTieneInformacion = "no dispone de información";
+	//Variables
 	String matricula;
-	String atrib;
+	String combustible;
 	String modelo;
 	String fabricante;
 
 	public Coche() {
 		matricula = "";
-		atrib = "";
+		combustible = "";
 		modelo = "";
 		fabricante = "";
 	}
 
 	public Coche(String m, String c, String mo, String f) {
 		matricula = m;
-		atrib = c;
+		combustible = c;
 		modelo = mo;
 		fabricante = f;
 	}
 
-	public String metodo1() {
+	public String combustibleCoche() {
 		String resultado = "";
-		if (atrib == "Gasolina") {
-			resultado += "El coche con matricula " + matricula + " ";
-			resultado += metodoA(modelo, fabricante);
-		} else if (atrib == "Diesel") {
-			resultado += "El coche con matricula " + matricula + " ";
-			resultado += metodoB(modelo, fabricante);
-		} else if (atrib == "Híbrido") {
-			resultado += "El coche con matricula " + matricula + " ";
-			resultado += metodoC(modelo, fabricante);
+		//Si la variable combustible, es igual a Gasolina
+		if (combustible == "Gasolina") {
+			resultado += cocheConMatricula + matricula + " ";
+			resultado += metodoGasolina(modelo, fabricante);
+		} else if (combustible == "Diesel") {
+			resultado += cocheConMatricula + matricula + " ";
+			resultado += metodoDiesel(modelo, fabricante);
+		} else if (combustible == "Híbrido") {
+			resultado += cocheConMatricula + matricula + " ";
+			resultado += metodoHibrido(modelo, fabricante);
 		} else {
-			resultado += "El coche con matricula " + matricula + " ";
-			resultado += "no dispone de información";
+			resultado += cocheConMatricula + matricula + " ";
+			resultado += noTieneInformacion;
 		}
 		return resultado;
 	}
+
+	
 }
