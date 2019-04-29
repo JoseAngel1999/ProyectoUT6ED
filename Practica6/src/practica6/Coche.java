@@ -26,7 +26,7 @@ public class Coche {
 
 	public String combustibleCoche() {
 		String resultado = "";
-		//Si la variable combustible, es igual a Gasolina..
+		//Si la variable combustible, es igual a Gasolina.
 		if (combustible == "Gasolina") {
 			resultado += cocheConMatricula + matricula + " ";
 			resultado += metodoGasolina(modelo, fabricante);
