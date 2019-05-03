@@ -42,6 +42,16 @@ public class Coche {
 		}
 		return resultado;
 	}
+	
+	private String metodoGasolina(String modelo2, String fabricante2) {
+		return null;
+	}
+	private String metodoDiesel(String modelo2, String fabricante2) {
+		return null;
+	}
+	private String metodoHibrido(String modelo2, String fabricante2) {
+		return null;
+	}
 
 	
 }
