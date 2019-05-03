@@ -1,7 +1,7 @@
 package practica6;
 
 public class Moto {
-	//Variables
+	//Variable
 	String matricula;
 	int cilindrada;
 
