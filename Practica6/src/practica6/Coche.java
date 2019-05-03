@@ -1,5 +1,10 @@
 package practica6;
 
+/**
+ * 
+ * @author Jose ANgel Cabezas Arenas
+ *
+ */
 public class Coche {
 	//Constantes
 	static final String cocheConMatricula = "El coche con matricula";
@@ -23,10 +28,13 @@ public class Coche {
 		modelo = mo;
 		fabricante = f;
 	}
-
+	/**
+	 * 
+	 * @return devuelve el tipo de coche, según e combustible que sea.
+	 */
 	public String combustibleCoche() {
 		String resultado = "";
-		//Si la variable combustible, es igual a Gasolina...
+		
 		if (combustible == "Gasolina") {
 			resultado += cocheConMatricula + matricula + " ";
 			resultado += metodoGasolina(modelo, fabricante);
@@ -42,13 +50,31 @@ public class Coche {
 		}
 		return resultado;
 	}
-	
+	/**
+	 * 
+	 * @param El modelo del coche
+	 * @param El fabricante del coche
+	 * @return 
+	 */
 	private String metodoGasolina(String modelo2, String fabricante2) {
 		return null;
 	}
+	/**
+	 * 
+	 * @param El modelo del coche
+	 * @param El fabricante del coche
+	 * @return
+	 */
 	private String metodoDiesel(String modelo2, String fabricante2) {
 		return null;
 	}
+	
+	/**
+	 * 
+	 * @param El modelo del coche
+	 * @param El fabricante del coche
+	 * @return
+	 */
 	private String metodoHibrido(String modelo2, String fabricante2) {
 		return null;
 	}

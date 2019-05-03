@@ -1,5 +1,9 @@
 package practica6;
-
+/**
+ * 
+ * @author Jose Angel Cabezas Arenas
+ *
+ */
 public class Moto {
 	//Variables
 	String matricula;
