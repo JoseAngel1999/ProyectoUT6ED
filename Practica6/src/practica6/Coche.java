@@ -1,7 +1,7 @@
 package practica6;
 
 public class Coche {
-	//Constante
+	//Constantes
 	static final String cocheConMatricula = "El coche con matricula";
 	static final String noTieneInformacion = "no dispone de información";
 	//Variables
