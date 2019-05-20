@@ -2,7 +2,7 @@ package practica6;
 
 /**
  * 
- * @author Jose ANgel Cabezas Arenas
+ * @author Jose Angel Cabezas Arenas
  *
  */
 public class Coche {
@@ -51,32 +51,34 @@ public class Coche {
 		return resultado;
 	}
 	/**
-	 * 
-	 * @param El modelo del coche
-	 * @param El fabricante del coche
-	 * @return 
+	 * Método para obtener el gasto de un coche de gasolina.
+	 * @param modelo
+	 * @param fabricante
+	 * @return Devuelve un String con el fabricante, modelo y gasto de un coche de gasolina.
 	 */
 	private String metodoGasolina(String modelo2, String fabricante2) {
-		return null;
+		return  "Es un "+fabricante2+modelo2+" y gasta 1,337 euros por litro.";
 	}
 	/**
-	 * 
-	 * @param El modelo del coche
-	 * @param El fabricante del coche
-	 * @return
+	 * Método para obtener el gasto de un coche Diesel.
+	 * @param modelo
+	 * @param fabricante
+	 * @return Devuelve un String con el fabricante, modelo y gasto de un coche Diesel.
 	 */
 	private String metodoDiesel(String modelo2, String fabricante2) {
-		return null;
+		return "es un "+ fabricante2+modelo2+" y gasta 1,052 euros por litro.";
 	}
 	
 	/**
-	 * 
-	 * @param El modelo del coche
-	 * @param El fabricante del coche
-	 * @return
+	 * Método para obtener el gasto de un coche Híbrido.
+	 * @param modelo
+	 * @param fabricante
+	 * @return Devuelve un String con el fabricante, modelo y gasto de un coche Híbrido.
 	 */
 	private String metodoHibrido(String modelo2, String fabricante2) {
-		return null;
+		return "es un"+fabricante2+modelo2+" y no necesita combustible.";
+
+
 	}
 
 	
